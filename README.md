@@ -1,4 +1,3 @@
-# PaperNest
 ## What Is It?
 PaperNest is a website that provides you with many stationary and art supplies to buy, without being afraid of buying counterfeit art supplies that affects your art quality. We ensures the stationary you buy from us is original, so you don't need to be worry if the art supplies you buy ruined the end result.
 
