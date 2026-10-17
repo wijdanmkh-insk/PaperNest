@@ -6,10 +6,30 @@
 
 :root{
     /*Colors*/
+    --color-primary: #11296b;
+    --color-secondary: #00509d;
+    --color-white: #ededed;
+    --color-yellow: #ffdb57;
+    --color-bright: #ffcb05;
+
+    /*Font Sizes*/
+    --font-size-small: 16px;
+    --font-size-medium: 24px;
 
     /*Page Size*/
     --max-width: 1300px;
     --padding-side: 24px;
+
+    /*Buttons*/
+    --button-padding: 12px 24px;
+    --border-radius: 24px;
+    --border-width: 2px;
+
+    --font-family: 'Clarity City', sans-serif;
+}
+
+a:visited{
+    color: inherit;
 }
 
 nav{
@@ -45,21 +65,44 @@ nav{
     margin-left: auto;
 }
 
+.sign-in{
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--color-primary);
+}
+
+.sign-up{
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
 a{
     text-decoration: none;
+
+}
+
+/*Main*/
+main{
+    font-family: var(--font-family);
 }
 
 /*Hero*/
 .hero{
+    max-height: 100vh;
+    width: 100%;
+    overflow: hidden;
     display: flex; 
     align-items: center;
     flex-wrap:wrap;
     justify-content: space-around;
+    margin: 0 var(--padding-side) 0;
 }
 
 .col-2{
     flex-basis: 50%;
-    min-width: 300px;
+    max-width: 500px;
 }
 
 .col-2 img{
@@ -71,4 +114,20 @@ a{
     font-size: 64px;
     line-height: 1.2;
     margin-bottom: 20px;
+    justify-content: center;
+}
+
+.col-2 p{
+    font-size: var(--font-size-medium);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.explore-btn{
+    display: inline-block;
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    font-size: var(--font-size-medium);
+    color: var(--color-white);
 }
