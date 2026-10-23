@@ -26,10 +26,10 @@
                     </div>
                     
                     <div class="logs">
-                        <a href="" class="sign-in">
+                        <a href="/pages/auth/sign-in.php" class="sign-in">
                             Sign In
                         </a>
-                        <a href="" class="sign-up">
+                        <a href="/pages/auth/sign-up.php" class="sign-up">
                             Sign Up
                         </a>
                     </div>
@@ -53,6 +53,4 @@
             </div>
         </main>
     </body>
-        
-
 </html>
