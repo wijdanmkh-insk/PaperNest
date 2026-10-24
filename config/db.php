@@ -1,9 +1,9 @@
 <?php
-    require_once(__DIR__ . "/vendor/autoload.php");
+    require_once dirname(__DIR__) . '/vendor/autoload.php';
     use Dotenv\Dotenv;
 
-    $env = Dotenv::createImmutable(__DIR__);
-    $env->load();
+    $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+    $dotenv->safeLoad();
 
     $host = $_ENV['DB_HOST'] ?? 'localhost';
     $user = $_ENV['DB_USER'] ?? 'root';
